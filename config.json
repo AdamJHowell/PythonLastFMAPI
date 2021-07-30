@@ -1,0 +1,6 @@
+{
+	"url": "https://ws.audioscrobbler.com/2.0/",
+	"header": {
+		"user-agent": "BigGuyWhoKills"
+	}
+}
