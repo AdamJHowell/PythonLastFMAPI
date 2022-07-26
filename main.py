@@ -5,6 +5,12 @@ import json
 
 
 def lastfm_get(payload):
+    """
+    lastfm_get() will query the LastFM API.
+    :param payload: the payload to send, including the API key needed to use their service.
+    :return: a JSON formatted response.
+    """
+
     # define headers and URL
     headers = config_json['header']  # {'user-agent': 'BigGuyWhoKills'}
     api_key = api_key_json['apiKey']
@@ -18,6 +24,12 @@ def lastfm_get(payload):
 
 
 def json_print(obj):
+    """
+    json_print() will print the results in a formatted manner.
+    :param obj: the raw JSON to format and print to screen.
+    :return: none
+    """
+
     # create a formatted string of the Python JSON object
     text = json.dumps(obj, sort_keys=True, indent=4)
     print(text)
